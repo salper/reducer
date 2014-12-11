@@ -4,7 +4,7 @@
   "description": "Javascript transducers.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --recursive --check-leaks --compilers js:mocha-traceur --watch test",
+    "test": "mocha --recursive --check-leaks --compilers js:mocha-traceur test",
     "build": "traceur --dir src lib --modules=commonjs"
   },
   "repository": {
@@ -23,12 +23,21 @@
   },
   "homepage": "https://github.com/salper/transducer",
   "devDependencies": {
+    "blanket": "^1.1.6",
     "chai": "^1.10.0",
+    "coveralls": "^2.11.2",
     "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "0.0.1",
     "mocha-traceur": "^2.0.0",
     "traceur": "0.0.79"
   },
   "dependencies": {
     "lodash": "^2.4.1"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "src",
+      "data-cover-never": "node_modules"
+    }
   }
 }

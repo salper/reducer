@@ -1,6 +1,16 @@
 Transducer
 ==========
 
+[![Build Status][status]](https://travis-ci.org/salper/transducer)
+[![Dependency Status][deps]](https://david-dm.org/salper/transducer)
+[![devDependency Status][devdeps]](https://david-dm.org/salper/transducer#info=devDependencies)
+[![Coverage Status][coverage]](https://coveralls.io/r/salper/transducer)
+
+[status]: https://travis-ci.org/salper/transducer.svg?branch=master
+[deps]: https://david-dm.org/salper/transducer.svg?theme=shields.io
+[devdeps]: https://david-dm.org/salper/transducer/dev-status.svg?theme=shields.io
+[coverage]: https://img.shields.io/coveralls/salper/transducer.svg
+
 This is a simple and naive transducer implementation. Transducers allow to apply chained algorithms in a single loop. It also provides more compliant argument positions, for functional programming.
 
 # Example

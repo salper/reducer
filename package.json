@@ -1,0 +1,34 @@
+{
+  "name": "transduce",
+  "version": "0.0.0",
+  "description": "Javascript transducers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive --check-leaks --compilers js:mocha-traceur --watch test",
+    "build": "traceur --dir src lib --modules=commonjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:salper/transducer.git"
+  },
+  "keywords": [
+    "iterator",
+    "functional",
+    "transducer"
+  ],
+  "author": "salper <stefen.alper@nbeards.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salper/transducer/issues"
+  },
+  "homepage": "https://github.com/salper/transducer",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1",
+    "mocha-traceur": "^2.0.0",
+    "traceur": "0.0.79"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}

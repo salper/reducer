@@ -36,7 +36,7 @@ let result = reduce(
 ```
 Using compose:
 ```javascript
-import(map, filter, compose, reduce) from 'transducer';
+import {map, filter, compose, reduce} from 'transducer';
 
 let result = reduce(compose(
   map(value => value * 2),

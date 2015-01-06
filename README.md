@@ -3,7 +3,7 @@ Reducer
 
 [![Build Status][status]](https://travis-ci.org/salper/reducer)
 [![Dependency Status][deps]](https://david-dm.org/salper/reducer)
-[![Coverage Status][coverage]](https://coveralls.io/r/salper/reducer)
+[![devDependency Status][devdeps]](https://david-dm.org/salper/reducer#info=devDependencies)
 
 [status]: https://travis-ci.org/salper/reducer.svg?branch=master
 [deps]: https://david-dm.org/salper/reducer.svg?theme=shields.io

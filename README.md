@@ -1,36 +1,34 @@
-Transducer
+Reducer
 ==========
 
-[![Build Status][status]](https://travis-ci.org/salper/transducer)
-[![Dependency Status][deps]](https://david-dm.org/salper/transducer)
-[![devDependency Status][devdeps]](https://david-dm.org/salper/transducer#info=devDependencies)
-[![Coverage Status][coverage]](https://coveralls.io/r/salper/transducer)
+[![Build Status][status]](https://travis-ci.org/salper/reducer)
+[![Dependency Status][deps]](https://david-dm.org/salper/reducer)
+[![Coverage Status][coverage]](https://coveralls.io/r/salper/reducer)
 
-[status]: https://travis-ci.org/salper/transducer.svg?branch=master
-[deps]: https://david-dm.org/salper/transducer.svg?theme=shields.io
-[devdeps]: https://david-dm.org/salper/transducer/dev-status.svg?theme=shields.io
-[coverage]: https://img.shields.io/coveralls/salper/transducer.svg
+[status]: https://travis-ci.org/salper/reducer.svg?branch=master
+[deps]: https://david-dm.org/salper/reducer.svg?theme=shields.io
+[devdeps]: https://david-dm.org/salper/reducer/dev-status.svg?theme=shields.io
 
-This is a simple and naive transducer implementation. Transducers allow to apply chained algorithms in a single loop. It also provides more compliant argument positions, for functional programming.
+This is a simple and naive reducer implementation. Reducers allow to apply chained algorithms in a single loop. It also provides more compliant argument positions, for functional programming.
 
 # Example
 Using map:
 ```javascript
-import {map, reduce} from 'transducer';
+import {map, reduce} from 'reducer';
 
 reduce(map(value => value * 2)(concat), [1, 2, 3, 4]);
 // => [2, 4, 6];
 ```
 Using filter:
 ```javascript
-import {filter, reduce} from 'transducer';
+import {filter, reduce} from 'reducer';
 
 reduce(filter(value => 0 === value % 2)(concat), [1, 2, 3, 4]);
 // => [2, 4]
 ```
 Using compose:
 ```javascript
-import {map, filter, compose, reduce} from 'transducer';
+import {map, filter, compose, reduce} from 'reducer';
 
 reduce(compose(
   map(value => value * 2),

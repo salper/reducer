@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 import {map, filter, compose, reduce} from '../src';
 import {identity, concat} from './helper';
 
-describe('A transducer', () => {
+describe('A reducer', () => {
   it('should provide a mapper', () => {
     let mapper = map(value => value * 2);
 

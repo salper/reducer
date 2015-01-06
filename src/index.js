@@ -16,7 +16,7 @@ export var reduce = (transform, result, iterable) => {
 };
 
 /*
- * Map transducer.
+ * Map reducer.
  *
  * @param {Function} transform
  * @return {Function}
@@ -29,7 +29,7 @@ export var map = transform => {
 };
 
 /**
- * Filter transducer.
+ * Filter reducer.
  *
  * @param {Function} test
  * @return {Function}
